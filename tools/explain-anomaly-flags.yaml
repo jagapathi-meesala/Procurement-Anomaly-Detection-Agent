@@ -1,0 +1,9 @@
+name: explain-anomaly-flags
+description: Explain a procurement anomaly flag and list evidence checks and plausible alternatives.
+input_schema:
+  type: object
+  properties:
+    flag:
+      type: object
+      additionalProperties: true
+  required: [flag]

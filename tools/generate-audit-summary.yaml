@@ -1,0 +1,12 @@
+name: generate-audit-summary
+description: Draft a neutral audit summary from supplied flags and review evidence.
+input_schema:
+  type: object
+  properties:
+    findings:
+      type: string
+    review_notes:
+      type: string
+    evidence_references:
+      type: string
+  required: [findings]

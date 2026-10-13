@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: procurement-anomaly-detection-agent
+version: "1.0.0"
+description: Flags unusual patterns in supplied procurement records for human review.
+author: jagapathi-meesala
+license: MIT
+skills:
+  - procurement-data-review
+  - anomaly-triage
+  - audit-reporting
+tools:
+  - analyze-procurement-records
+  - explain-anomaly-flags
+  - generate-audit-summary
+runtime:
+  max_turns: 5
+  temperature: 0.2
+  timeout: 30
+tags:
+  - procurement
+  - anomaly-detection
+  - audit

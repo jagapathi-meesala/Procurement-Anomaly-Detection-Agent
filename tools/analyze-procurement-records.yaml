@@ -1,0 +1,23 @@
+name: analyze-procurement-records
+description: Flag missing fields, duplicate-looking invoice references, and price outliers against supplied benchmarks.
+input_schema:
+  type: object
+  properties:
+    rows:
+      type: array
+      items:
+        type: object
+        properties:
+          supplier: {type: string}
+          invoice_ref: {type: string}
+          category: {type: string}
+          quantity: {type: number}
+          unit_price: {type: number}
+        required: []
+    price_benchmarks:
+      type: object
+      additionalProperties:
+        type: number
+    high_price_ratio:
+      type: number
+  required: [rows]
